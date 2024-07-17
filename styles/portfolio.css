@@ -159,7 +159,7 @@ margin: 30px 5px;
 }
 /* btn styles */
 
-}
+
 .section-title{
     color: #181818;
     font-weight: bold;
@@ -183,4 +183,43 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: no ne;
+}
+.hide{
+    display: none;
+}
+
+
+/* responsive media query */
+@media  screen and (max-width:576px) {
+    .skills-container{
+        flex-direction: column;  
+    }
+    .resume-container , 
+    .about-items ,  
+    .banner , nav > ul{
+        flex-direction: column;
+    }
+    nav > ul{
+        gap: 20px;
+    }
+    .secondary-bg {
+        flex-direction: column;
+    }
+    footer , .about{
+        padding: 20px;
+    }
+    .banner{
+        margin: 20px;
+        background-image: none;
+    }
+    .banner-profile-picture{
+        width: 100%;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    
 }
